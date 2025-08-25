@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for file in *.fasta; do
+	head_count=$(grep -c "^>" "$file")
+	echo "$file $"
+done
+sort -k2 -nr
